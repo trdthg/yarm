@@ -15,7 +15,7 @@ struct Opt {
     #[clap(short, long, help = "delete all in a folder except xxx xxx")]
     except: Option<String>,
 
-    #[clap(help = "file or folders path that will be deleted [support regex]")]
+    #[clap(required = true, help = "file or folders path that will be deleted [support regex]")]
     paths: Vec<String>,
 }
 
