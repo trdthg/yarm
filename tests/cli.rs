@@ -19,6 +19,7 @@ fn no_args() {
 
 #[test]
 fn rm_paths() {
+    assert_eq!(1 + 1, 2);
     // let temp_dir = TempDir::new().unwrap();
     // let dirpath = temp_dir.path()
     // let files =  [0..100].iter().map(|i| {
