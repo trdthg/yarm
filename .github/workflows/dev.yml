@@ -22,10 +22,3 @@ jobs:
 
     - name: Run tests
       run: cargo test --verbose
-
-    - name: Opening pull request
-      uses: tretuna/sync-branches@1.4.0
-      with:
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-        FROM_BRANCH: "dev"
-        TO_BRANCH: "master"
